@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
     const location = useLocation();
-    const history = useHistory();
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     const handleNavbarToggle = () => {
@@ -17,14 +16,6 @@ function Navbar() {
     const isActive = (pathname) => {
         return location.pathname === pathname ? 'active' : '';
     };
-
-    useEffect(() => {
-        // Check if the current location is the root ('/')
-        if (location.pathname === '/') {
-            // Manually navigate to the home page
-            history.push('/');
-        }
-    }, [location.pathname, history]);
 
     return (
         <>
@@ -47,8 +38,7 @@ function Navbar() {
                                 <Link className={`nav-link ${isActive('/')}`} to="/">
                                     Home
                                 </Link>
-                            </li>
-                            <li className="nav-item">
+                            </li>                            <li className="nav-item">
                                 <Link className={`nav-link ${isActive('/about')}`} to="/about">
                                     About
                                 </Link>
