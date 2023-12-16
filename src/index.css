@@ -1,0 +1,1094 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #191919;
+  --second-bg-color: #272829;
+  --text-color: #ededed;
+  --main-color: #e84118;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 37, 41, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+  color: var(--main-color);
+}
+
+
+span {
+  color: var(--main-color);
+}
+
+nav {
+  z-index: 100;
+  background: transparent;
+}
+
+.navbar-brand {
+  padding-right: 58%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-left: 4.5rem;
+  color: var(--text-color);
+}
+
+.navbar-brand:hover {
+  color: var(--text-color);
+}
+
+.nav-item {
+  float: right;
+  padding-left: 2.5rem;
+}
+
+.nav-item a {
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+  color: var(--main-color);
+}
+
+/* Navbar.css */
+.navbar {
+  transition: background-color 0.25s ease; /* Add a transition effect for background-color */
+}
+
+.navbar-open {
+  background-color: var(--second-bg-color); /* Set the background color when the navbar is open */
+  position: fixed;
+  width: 100%;
+  z-index: 10001;
+}
+
+/* Add any other styling you need for your navbar */
+
+.intro-text {
+  padding: 15rem 0 0 7rem;
+}
+
+#typed-text {
+  font-weight: bolder;
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
+  padding-left: 7rem;
+}
+
+.Info-Details p {
+  max-width: 50rem;
+  padding-left: 7rem;
+
+}
+
+.navbar .nav-link.active {
+  color: var(--main-color) !important;
+}
+
+.btn1 {
+  position: relative;
+  width: 8rem;
+  height: 3rem;
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  font-weight: bold;
+  margin: 4rem 0 0 7rem;
+  border: 2px solid transparent;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1;
+  transition: color 0.5s;
+  /* Add color transition for smooth color change */
+}
+
+.btn1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: -1;
+  /* Add transition for smooth width change */
+}
+
+.btn1:hover {
+  color: var(--main-color);
+  /* Change text color on hover */
+}
+
+.btn1:hover::before {
+  width: 100%;
+  background: var(--second-bg-color);
+  border-color: var(--main-color);
+  /* Change border color on hover */
+}
+
+
+.btn2 {
+  position: relative;
+  width: 8rem;
+  height: 3rem;
+  background: var(--second-bg-color);
+  color: var(--main-color);
+  font-weight: bold;
+  margin-left: 1rem;
+  border: 2px solid transparent;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: -1;
+  /* Add transition for smooth width change */
+}
+
+.btn2:hover {
+  color: var(--second-bg-color);
+  /* Change text color on hover */
+}
+
+.btn2:hover::before {
+  width: 100%;
+  background: var(--main-color);
+  border-color: var(--second-bg-color);
+  /* Change border color on hover */
+}
+
+.Icons {
+  padding: 10rem 0 0 4em;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+i {
+  padding-right: 2rem;
+  color: var(--main-color);
+}
+
+.Heading {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.Heading h2 {
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.Heading {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.Heading img {
+  margin-top: 2.5rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 0.2rem solid #e84118;
+  background-size: cover;
+}
+
+/* .Heading .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid red;
+    border-bottom: .2rem solid red;
+    border-left: .2rem solid --main-color;
+    border-right: .2rem solid --main-color;
+
+  } */
+
+.Heading h1 {
+  padding-top: 2.5rem;
+}
+
+.Heading p {
+  padding: 2rem 15rem;
+}
+
+.btn3 {
+  position: relative;
+  width: 8rem;
+  height: 3rem;
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  font-weight: bold;
+  border: 2px solid transparent;
+  margin-top: 2rem;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1;
+  transition: color 0.5s;
+  /* Add color transition for smooth color change */
+}
+
+.btn3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: -1;
+  /* Add transition for smooth width change */
+}
+
+.btn3:hover {
+  color: var(--main-color);
+  /* Change text color on hover */
+}
+
+.btn3:hover::before {
+  width: 100%;
+  background: var(--second-bg-color);
+  border-color: var(--main-color);
+  /* Change border color on hover */
+}
+
+.Journey h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.Main-Joureny {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  padding-top: 2rem;
+}
+
+.Education-Column .Education-Section {
+  border-left: .2rem solid var(--main-color);
+}
+
+.Edu-Date {
+  border: .2rem solid var(--main-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.Edu-Date h3 {
+  font-weight: bold;
+}
+
+.Edu-Date h6 {
+  color: var(--main-color);
+}
+
+.Eduction-Details {
+  max-width: 50rem;
+}
+
+.Exp-Column h1 {
+  margin-left: 10rem;
+}
+
+.Exp-Column .Exp-Section {
+  border-left: .2rem solid var(--main-color);
+  margin-left: 10rem;
+}
+
+.Exp-Date {
+  border: .2rem solid var(--main-color);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.Exp-Date h3 {
+  font-weight: bold;
+}
+
+.Exp-Date h6 {
+  color: var(--main-color);
+}
+
+.Exp-Details {
+  max-width: 50rem;
+}
+
+/* Skills Section */
+
+.Skills-Section {
+  margin-top: 3rem;
+  text-align: center;
+}
+.Skills-Section h1{
+  font-size: 3rem;
+  font-weight: bloder;
+}
+
+.Skills-Icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  margin-top: 4rem;
+}
+
+.Basic-Section {
+  border-bottom: .2rem solid var(--main-color);
+  border-left: .2rem solid var(--main-color);
+  border-radius: 5px;
+  padding: 1.2rem;
+}
+
+.Rare-Section {
+  border-bottom: .2rem solid var(--main-color);
+  border-left: .2rem solid var(--main-color);
+  padding: 1.2rem;
+  margin-left: 20rem;
+}
+
+.Span-Icon {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+/* Contact-Section */
+
+.Contact-Section {
+  text-align: center;
+  padding-top: 2rem;
+}
+.Contact-Section h1{
+  font-size: 3rem;
+  font-weight: bloder;
+}
+
+section {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+form {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form .input-box input {
+  margin: 1rem;
+}
+
+form .input-box .input-field input,
+form .textarea-field textarea {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  background: transparent;
+  border-radius: .6rem;
+  border: .2rem solid var(--main-color);
+}
+
+form .input-box .input-field input::placeholder,
+form .textarea-field textarea::placeholder {
+  color: var(--text-color);
+}
+
+form .textarea-field textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:hover {
+  border: 0 solid #000;
+}
+
+.focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: .6rem;
+  z-index: -1;
+}
+
+/* Responsive The Web */
+
+@media screen and (min-width:320px) and (max-width:433px) {
+  
+  .Eduction-Details{
+    max-width: auto;
+  }
+  .Exp-Details{
+    max-width: auto;
+  }
+
+  .Exp-Column h1{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .navbar-brand {
+    padding-right: 0;
+    color: var(--text-color);
+  }
+
+  .navbar a.navbar-brand {
+    padding: 10px 15px;
+  }
+
+  .navbar .nav-link.active {
+    color: var(--main-color) !important;
+  }
+
+  #typed-text {
+    font-size: 1rem;
+    padding-left: 1.8rem;
+    font-weight: bold;
+  }
+
+  .Info-Details p {
+    width: auto;
+    padding: 1rem 0 .2rem .7rem;
+  }
+
+  .btn2 {
+    margin: 2rem 0 0 7rem;
+  }
+
+  .Icons {
+    padding: 5rem 0 0 3em;
+  }
+
+  /* About.js  */
+
+  .Heading {
+    padding-left: 1rem;
+  }
+
+  .Heading h2 {
+    font-size: 3rem;
+  }
+
+  .Heading img {
+    margin-top: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+  }
+
+  .Heading p {
+    padding: 1rem .6rem;
+  }
+
+  .btn3 {
+    margin-bottom: 5rem;
+  }
+
+  .Education-Column .Education-Section {
+    border-left: none;
+    border-right: none;
+  }
+
+  .Education-Column h1 {
+    text-align: center;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: none;
+    border-right: none;
+    margin-left: 0;
+  }
+
+  /* Skills Section  */
+  .Skills-Section p {
+    margin: auto 2%;
+  }
+
+  .Basic-Section {
+    border-bottom: none;
+    border-left: none;
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+
+  .Rare-Section {
+    border-bottom: none;
+    border-left: none;
+    padding: 1.2rem;
+    margin: 5% 0 0 0;
+  }
+
+  .html-Section {
+    border-bottom: .2rem solid var(--main-color);
+  }
+
+  .JS-Section {
+    border-bottom: .2rem solid var(--main-color);
+  }
+
+  .Span-Icon i {
+    padding-top: 20%;
+  }
+
+  form .textarea-field textarea {
+    resize: auto;
+  }
+
+
+}
+
+@media screen and (min-width: 350px) and (max-width:480px) {
+
+  .intro-text {
+    padding: 7rem 0 0 2rem;
+  }
+
+  .intro-text button {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #typed-text {
+    font-size: 1.3rem;
+    padding-left: 1.8rem;
+    font-weight: bold;
+  }
+
+  .Heading p {
+    margin: 1rem 1rem 0 .4rem;
+  }
+
+  .btn1 {
+    margin-left: 35%;
+  }
+
+  .btn2 {
+    margin-left: 35%;
+  }
+
+  .Info-Details p {
+    width: auto;
+    padding: 1rem 0 .2rem 1.8rem;
+  }
+
+  .Icons {
+    padding: 5rem 0 0 32%;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-brand {
+    padding-right: 0;
+  }
+
+  /* .collapse {
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    background: var(--main-color);
+  } */
+
+  .intro-text {
+    padding: 13% 0 0 5rem;
+  }
+
+  #typed-text {
+    font-size: 2rem;
+    padding-left: 1.8rem;
+    font-weight: bold;
+  }
+
+  .Info-Details p {
+    width: auto;
+    padding: 1rem 1rem .2rem 1.7rem;
+  }
+
+  .btn1 {
+    margin-left: 22%;
+  }
+
+  .btn2 {
+    margin: 2rem 0 0 7rem;
+  }
+
+  .Icons {
+    padding: 5rem 0 0 35%;
+  }
+
+  /* About.js  */
+
+  .Heading {
+    padding-left: 1rem;
+  }
+
+  .Heading h2 {
+    font-size: 3rem;
+  }
+
+  .Heading img {
+    margin-top: 2.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+  }
+
+  .Heading p {
+    padding: 1rem .6rem;
+  }
+
+  .btn3 {
+    margin-bottom: 5rem;
+  }
+
+  .Education-Column .Education-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+  }
+
+  .Education-Column h1 {
+    text-align: center;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+  }
+
+  /* Skills Section  */
+  .Skills-Section p {
+    margin: auto 2%;
+  }
+
+  .Basic-Section {
+    border-bottom: none;
+    border-left: none;
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+
+  .Rare-Section {
+    border-bottom: none;
+    border-left: none;
+    padding: 1.2rem;
+    margin: 5% 0 0 0;
+  }
+
+  .html-Section {
+    border-bottom: .2rem solid var(--main-color);
+  }
+
+  .JS-Section {
+    border-bottom: .2rem solid var(--main-color);
+  }
+
+  .Span-Icon i {
+    padding-top: 20%;
+  }
+
+  form .textarea-field textarea {
+    resize: auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 633px) {
+  #typed-text {
+    font-size: 1.5rem;
+    padding-left: 1.8rem;
+  }
+
+  .btn2 {
+    margin: 2rem 0 0 5%;
+  }
+}
+
+@media screen and (min-width:1628px) and (max-width:1880px){
+  .navbar-brand{
+    padding-right: 60%;
+  }
+}
+
+@media screen and (max-width: 1627px) {
+  .navbar-brand{
+    padding-right: 50%;
+  }
+
+  .Basic-Section {
+    border-left: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  
+  .Rare-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    padding: 1.2rem;
+    margin-left: 10rem;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem ;
+    padding-bottom: 1.5rem ;
+    padding-left: 7.5rem;
+  }
+
+  .Education-Column .Education-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1584px) {
+  .navbar-brand{
+    padding-right: 48%;
+  }
+
+  .Basic-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  
+  .Rare-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    padding: 1.2rem;
+    margin-left: 4rem;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem ;
+    padding-bottom: 1.5rem ;
+    padding-left: 7.5rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .navbar-brand{
+    padding-right: 44%;
+  }
+  
+  .Heading img {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+    background-size: cover;
+  }
+  
+  .Heading h1 {
+    padding-top: 2rem;
+  }
+  
+  .Heading p {
+    padding: 2rem 15rem;
+  }
+
+  .Basic-Section {
+    border-left: 0 solid #000;
+    border-bottom: 0 solid #000;
+    border-top: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  
+  .Rare-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    padding: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem ;
+    padding-bottom: 1.5rem ;
+    padding-left: 7.5rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1351px) {
+  .navbar-brand{
+    padding-right: 37.5%;
+  }
+  
+  .Heading img {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+    background-size: cover;
+  }
+  
+  .Heading h1 {
+    padding-top: 2rem;
+  }
+  
+  .Heading p {
+    padding: 2rem 15rem;
+  }
+
+  .Basic-Section {
+    border-left: 0 solid #000;
+    border-bottom: 0 solid #000;
+    border-top: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  
+  .Rare-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    padding: 1.2rem;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem ;
+    padding-bottom: 1.5rem ;
+    padding-left: 7.5rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1246px) {
+  .navbar-brand{
+    padding-right: 35%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-brand{
+    padding-right: 35%;
+  }
+
+  .Heading {
+    text-align: center;
+    padding-top: 3rem;
+  }
+  
+  .Heading h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+  }
+
+  .Heading img {
+    margin-top: 2rem;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+    background-size: cover;
+  }
+  
+  .Heading h1 {
+    padding-top: 2rem;
+  }
+  
+  .Heading p {
+    padding: 2rem 15rem;
+  }
+  
+  .btn3 {
+    position: relative;
+    width: 8rem;
+    height: 3rem;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    font-weight: bold;
+    border: 2px solid transparent;
+    margin-top: 2rem;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1;
+    transition: color 0.5s;
+    /* Add color transition for smooth color change */
+  }
+  
+
+  .Basic-Section {
+    border-left: 0 solid #000;
+    border-bottom: 0 solid #000;
+    border-top: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  
+  .Rare-Section {
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--main-color);
+    padding: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .Education-Column .Education-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+  }
+
+  .Education-Column h1 {
+    text-align: center;
+  }
+
+  .Exp-Column h1 {
+    padding-top: 3rem ;
+    padding-bottom: 1.5rem ;
+    padding-left: 7.5rem;
+  }
+
+  .Exp-Column .Exp-Section {
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1168px) {
+
+  .navbar-brand{
+    padding-right: 28%;
+  }
+}
+
+@media screen and (max-width: 1059px) {
+  .navbar-brand{
+    padding-right: 22%;
+  }
+
+  .Heading {
+    text-align: center;
+    padding-top: 3rem;
+  }
+  
+  .Heading h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+  }
+
+  .Heading img {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.2rem solid #e84118;
+    background-size: cover;
+  }
+  
+  .Heading h1 {
+    padding-top: 2rem;
+  }
+  
+  .Heading p {
+    padding: 2rem 10rem;
+  }
+
+  textarea{
+    width: 80%;
+  }
+}
